@@ -17,6 +17,23 @@
 
 // export default App
 
+// import React, { useState } from "react";
+// import './../styles/App.css';
+
+// const App = () => {
+
+//   const [name, setName] = useState("");
+//   return (
+//     <div>
+//         <p>Enter your name:</p>
+//         <input onChange={(e) => setName(e.target.value)}></input>
+//         <p>Hello, {name}!</p>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React, { useState } from "react";
 import './../styles/App.css';
 
@@ -25,9 +42,9 @@ const App = () => {
   const [name, setName] = useState("");
   return (
     <div>
-        <p>Enter your name:</p>
-        <input onChange={(e) => setName(e.target.value)}></input>
-        <p>Hello, {name}!</p>
+        <p id="prompt">Enter your name:</p>
+        <input id="nameInput" onChange={(e) => setName(e.target.value)}></input>
+        <p id="greeting">Hello, {name}!</p>
     </div>
   )
 }
